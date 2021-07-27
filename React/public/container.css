@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Fira Sans");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.main_header {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  background-color: rgb(172, 172, 172, 0.6);
+  font-family: Oswald;
+  font-weight: bolder;
+  font-size: 1.3vmax;
+}
+
+.main_header span {
+  padding: 10px;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.container {
+  padding: 3.75%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 0;
+  grid-row-gap: 20px;
+}
+
+.grid_items > section {
+  padding: 30px;
+}
+
+@media only screen and (min-width: 640px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    gap: 20px;
+  }
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid black;
+}
+
+.font-head {
+  font-family: Oswald;
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.container :not(div) {
+  font-family: Montserrat;
+  font-size: 1.3vmax;
+}
+
+.container img {
+  width: 100%;
+}
+
+.stattable table {
+  width: 100%;
+  text-align: left;
+}
+
+.stattable tr:nth-child(n + 3) td {
+  height: 30px;
+  padding-top: 15px;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.stattable th {
+  font-family: Lato;
+  font-size: x-large;
+}
+
+.stattable td {
+  font-family: Fira Sans;
+  font-size: 15px;
+}
+
+.stattable td:not(:first-child) {
+  text-align: right;
+}

@@ -1,0 +1,123 @@
+.searchbar{
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: rgb(170, 174, 177, 0.8);
+    font-family: -apple-system;
+    font-size: 12px;
+}
+.searchbar a,div {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    padding: 2px;
+    text-decoration: none;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    top:8px;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid black;
+    text-align: left;
+  }
+  
+.searchbar li:not(:last-child){
+    border-bottom: 1px solid black;
+}
+
+.searchbar li:hover{
+    color:blue
+}
+
+.searchbar ul{
+    list-style-type: none;
+    padding: 5px ;
+}
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+
+
+  /* @media only screen and (max-width: 800px) {
+    .search_box{
+      display: block;
+    }
+  }
+  
+.search_box{
+  display: none;
+} */
+.searchbox {
+  margin: 0 auto;
+  display: inline;
+  text-align: center;
+}
+
+input.rounded{
+    border: 1px solid rgb(73, 73, 73);
+    border-radius: 20px;
+    width: 40%;
+    font-size: 15px;
+    color: black;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    margin-left:-33px;
+    height: 25px;
+    width: 25px;
+    background: rgb(1, 79, 128);
+    color: white;
+    border: 0;
+    border-radius: 25px;
+}
+.searchbar .login_p{
+  margin:0;
+  display:inline;
+  float:right;
+}
+
+
+.imgflex{
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    min-height: 200px;
+}
+
+.imgflexbox:hover .imgflex {
+    display: flex;
+}
+
+.card--content {
+    background-color: #e74c3c;
+    min-width: 300px;
+    margin: 5px;
+    box-shadow: 3px 5px rgba(255,255,255,0.05);
+  }
+  
+  .card--content img {
+    width: 100%;
+    height: 100%;
+  }

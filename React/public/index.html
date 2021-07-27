@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+    <link rel="stylesheet" href="main_padding.css">
+    <link rel="stylesheet" href="searchbar.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="ticker.css">
+    <link rel="stylesheet" href="container.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"><meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Money Control</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- <div id="root"></div> -->
+    <div class='grid-layout'>
+      <div class='item1'></div>
+
+      <div class='item2'>
+          <div class="searchbar">
+              <a class='menu_img'>
+                  <img src="threelines.png" alt="" height = '18px'>
+              </a>
+              <div class="tooltip">
+                  <a href="#">English  <i class="arrow down"></i></a>
+                  <ul class="tooltiptext">
+                      <li>Hindi</li>
+                      <li>Gujarati</li>
+                  </ul>
+              </div>
+              <!-- <div class="imgflexbox">
+                  <a>Special  <i class="arrow down"></i></a>
+                  <div class="imgflex">
+                      <div class="card--content">
+                          <img src="http://image.prntscr.com/image/15f7d1b8dca94296b249f56eb6cc78d3.png"/>
+                      </div>
+                      <div class="card--content">
+                          <img src="http://image.prntscr.com/image/f2b0ac9e43334eddac9c1af05e573888.png"/>
+                      </div>
+                      <div class="card--content">
+                          <img src="http://image.prntscr.com/image/6915d39cf813481fa3c19fa292c582ba.png"/>
+                      </div>
+                      <div class="card--content">
+                      <img src="http://image.prntscr.com/image/ad357d428faf4e88ab3bdac78782b523.png"/></div>
+                      <div class="card--content">
+                      <img src="http://image.prntscr.com/image/7e98362d62b2490c998fe1472dcb0601.png"/></div>
+                  </div>
+              </div> -->
+              
+              <div class="searchbox">
+                  <input type="text" class="rounded" style="text-align: center;" placeholder="Search Quotes">
+                  <input type="submit" value=" " >
+                  <!-- <img src="MG.png" style="height: 15px;"> -->
+              </div>
+
+              <div class='login_p'>
+                  Hello,Login
+              </div>
+
+          </div>
+          
+          <img src="logo.jpg" style="display: block; margin-left: auto; margin-right: auto; width: min(30vw, 200px);">
+          <hr>
+
+          <div class="menu">
+              <a href="#home">Home</a>
+              <a href="#">CoronVirus</a>
+              <div class="dropdown" >
+                  <a>Market  <i class="arrow down"></i></a>
+                  <div class="dropdown-content">
+                      <section>
+                          <a><b>HOME</b></a><br>
+                          <a><b>INDIAN INDICES</b></a><br>
+                          <a><b>STOCKS</b></a>
+                          <ul>
+                              <li><a>All stats</a></li>
+                              <li><a>Top Gainers</a></li>
+                              <li><a>Top loser</a></li>
+                              <li><a>Only Buyer</a></li>
+                          </ul>
+                      </section>
+                      <section>
+                          <a><b>HOME</b></a><br>
+                          <a><b>INDIAN INDICES</b></a><br>
+                          <a><b>STOCKS</b></a>
+                          <ul>
+                              <li><a>All stats</a></li>
+                              <li><a>Top Gainers</a></li>
+                              <li><a>Top loser</a></li>
+                              <li><a>Only Buyer</a></li>
+                          </ul>
+                      </section><section>
+                          <a><b>HOME</b></a><br>
+                          <a><b>INDIAN INDICES</b></a><br>
+                          <a><b>STOCKS</b></a>
+                          <ul>
+                              <li><a>All stats</a></li>
+                              <li><a>Top Gainers</a></li>
+                              <li><a>Top loser</a></li>
+                              <li><a>Only Buyer</a></li>
+                          </ul>
+                      </section>
+                  </div>
+              </div>
+              <div class="dropdown" >
+                  <a>News  <i class="arrow down"></i></a>
+                  <div class="dropdown-content">
+                      <section>
+                          <a><b>HOMEPAGE</b></a><br>
+                          <a><b>BUSSNESS</b></a><br>
+                          <ul>
+                              <li><a>Home</a></li>
+                              <li><a>Economy</a></li>
+                              <li><a>Companies</a></li>
+                              <li><a>Mutualfunds</a></li>
+                          </ul>
+                      </section>
+                      <section>
+                          <a><b>GEOGRAPHY</b></a><br>
+                          <ul>
+                              <li><a>India</a></li>
+                              <li><a>World</a></li>
+                          </ul>
+                          <a><b>MARKETS</b></a><br>
+                          <ul>
+                              <li><a>Stocks</a></li>
+                              <li><a>Top Gainers</a></li>
+                              <li><a>Equity</a></li>
+                              <li><a>Commodities</a></li>
+                          </ul>
+                      </section>
+                  </div>
+              </div>
+              
+              <a href="#">Portfolio</a>
+              <a href="#">Commodities</a>
+              <a href="#" >Mutual Funds</a>  
+              <a href="#" >Presonal Funds</a>
+              <div class="dropdown" >
+                  <a>Forum  <i class="arrow down"></i></a>
+                  <div class="dropdown-content">
+                      <section>
+                          <a><b>EXPLORE FORUM</b></a><br>
+                          <ul>
+                              <li><a>Home</a></li>
+                              <li><a>Membership Rules</a></li>
+                              <li><a>Forum Topics</a></li>
+                              <li><a>Top Boarders</a></li>
+                          </ul>
+                          <a><b>USER PROFILE</b></a>
+                          
+                      </section>
+                      <section>
+                          <a><b>FORUM TOPICS</b></a><br>
+                          <ul>
+                              <li><a>Latest Threads</a></li>
+                              <li><a>Stocks</a></li>
+                              <li><a>Index</a></li>
+                              <li><a>Gold</a></li>
+                              <li><a>Personal</a></li>
+                          </ul>
+                          <a><b>MF FORUM</b></a>
+                      </section>
+                      <section>
+                          <a><b>POLLS</b></a><br>
+                          <ul>
+                              <li><a>Latest Polls</a></li>
+                              <li><a>Historical Polls</a></li>
+                              <li><a>Market Sentiments</a></li>
+                          </ul>
+                          <a><b>SUPPORT</b></a>
+                          <ul>
+                              <li><a>FAQs</a></li>
+                              <li><a>Code of Conduct</a></li>
+                              <li><a>Feedback</a></li>
+                          </ul>
+                      </section>
+                  </div>
+              </div>
+              <a href="#" >Media</a>
+              <a href="#">Earth360</a>
+              <a href="#" style="color: orange;">Be a Pro</a>
+          </div>
+
+          <hr>
+
+          <div class="freq_search">
+              <ul>
+                  <li><a>Driverless Car</a></li>
+                  <li><a>Vaccume Tracker</a></li>
+                  <li><a>Cryptocurrency</a></li>
+                  <li><a>Persona Tech</a></li>
+                  <li><a>Auto</a></li>
+                  <li><a>MC Masterclass</a></li>
+                  <li><a>Opinion</a></li>
+                  <li><a>Webinar</a></li>
+                  <li><a>Research</a></li>
+                  <li><a>#Sanjeevani</a></li>
+                  <li><a>#Investors</a></li>
+              </ul>
+          </div>
+
+          <hr>
+
+          <div class="tcontainer">
+              <div class="ticker-wrap">
+                  <div class="ticker-move">
+                      <div class="ticker-item">
+                          <b>GOLD</b> 461237.00 
+                          <div class="triangle-down"></div>
+                          -553(-13%)
+                      </div>
+                      <div class="ticker-item">
+                          <b>SILVER</b> 4637.00    
+                          <div class="triangle-up"></div>+53(+1.3%)
+                      </div>
+                      <div class="ticker-item">
+                          <b>PLATINIUM</b> 173737.00   
+                          <div class="triangle-up"></div>-653(+13%)
+                      </div>
+                      <div class="ticker-item">
+                          <b>COPPER</b> 461237.00   
+                          <div class="triangle-down"></div>-553(-13%)
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        <div class="news">
+            
+
+            <main class="container">
+                <!-- <section>
+                    <h4>Adani Group stocks tumble 5-20% on reports of NSDL freezing 3 FPI accounts</h4>
+                    <p>NSDL has frozen the accounts of Albula Investment Fund, Cresta Fund and APMS Investment Fund,
+                    which together own more than Rs 43,500 crore worth of shares in Adani Enterprises, Adani Green Energy,
+                    Adani Transmission and Adani Total Gas, reports have said..</p>
+                    <img
+                        src="https://images.moneycontrol.com/static-mcnews/2021/06/Gautam-Adani-770x433.jpg?impolicy=website&width=770&height=431">
+                    <ul>
+                        <li>NSDL freezes 3 FPIs linked to Adani Group that own shares worth Rs 43,500 crores</li>
+                        <li>Market LIVE Updates: Adani group stocks plunge; Indices trade lower, metals drag</li>
+                        <li>Gold Price Today: Yellow metal trades below 49,000; spot gold slips to 10-day low</li>
+                    </ul>
+                    <hr>
+                </section>
+                
+                <section>
+                    <div class="font-head">IN THE NEWS</div>
+                    <h4>Four IPOs hit D-Street this week: Which one should be your pick?</h4>
+                    <ul>
+                        <li>Shyam Metalics and Energy IPO opens for subscription; analysts say subscribe</li>
+                        <li>Sona Comstar IPO opens: Should you take the ride?</li>
+                        <li>Delhi unlock | COVID curbs to be eased from June 14: What will open and what won't</li>
+                    </ul>
+
+                    <hr>
+
+                    <div class="font-head">IN FOCUS</div>
+                    <h4>Cabinet reshuffle? Long probables list, eye on Uttar Pradesh polls and revolt in LJP</h4>
+                    <ul>
+                        <li>Coronavirus impact | Public sector banks warming up to finance COVID-19 healthcare infrastructure</li>
+                        <li>Coronavirus News Live Updates: India reports 70,421 new COVID-19 infections, 3,921 deaths</li>
+                    </ul>
+
+                    <hr>
+                </section>
+                
+                <section>
+                <div class="font-head">FIGHTING COVID</div>
+                <h4>How to take care of children to save them from COVID-19: Ayush Ministry comes out with homecare guidelines</h4>
+                
+                <hr>
+
+                <div class="font-head">MC INSIDER</div>
+                <h4>Cabinet reshuffle candidates, crypto dilemma, privatisation fears at banks, internet IPO buzz and more</h4>
+                <hr>
+
+                <div class="font-head">OPINION</div>
+                <h4>Congress Leadership Crisis | Internal rebellion is an intermittent problem</h4>
+                <hr>
+
+                <div class="font-head">THE REAL PICTURE</div>
+                <h4>The consolidation story in Mumbai real estate hits a roadblock</h4>
+                <hr>
+
+                </section> -->
+            </main>
+
+            <main class="container">
+                <section>
+                    <div class="font-head">IN THE NEWS</div>
+                    <h4>Four IPOs hit D-Street this week: Which one should be your pick?</h4>
+                    <ul>
+                        <li>Shyam Metalics and Energy IPO opens for subscription; analysts say subscribe</li>
+                        <li>Sona Comstar IPO opens: Should you take the ride?</li>
+                        <li>Delhi unlock | COVID curbs to be eased from June 14: What will open and what won't</li>
+                    </ul>
+
+                    <hr>
+                    </section>
+                    <section>
+                    <div class="font-head">IN FOCUS</div>
+                    <h4>Cabinet reshuffle? Long probables list, eye on Uttar Pradesh polls and revolt in LJP</h4>
+                    <ul>
+                        <li>Coronavirus impact | Public sector banks warming up to finance COVID-19 healthcare infrastructure</li>
+                        <li>Coronavirus News Live Updates: India reports 70,421 new COVID-19 infections, 3,921 deaths</li>
+                    </ul>
+
+                    <hr>
+                </section>
+                
+                <section>
+                <div class="font-head">FIGHTING COVID</div>
+                <h4>How to take care of children to save them from COVID-19: Ayush Ministry comes out with homecare guidelines</h4>
+                
+                <hr>
+
+                <div class="font-head">MC INSIDER</div>
+                <h4>Cabinet reshuffle candidates, crypto dilemma, privatisation fears at banks, internet IPO buzz and more</h4>
+                <hr>
+                </section>
+            </main>
+
+            <main id='tableContainer' class="container">
+                <!-- <div class="stattable">
+                    <table>
+                        <tr><th colspan = '4'>Name
+                            <hr></th></tr>
+                        <tr>
+                            <td>Commodities</td>
+                            <td>Price</td>
+                            <td>Change</td>
+                            <td>% Chg</td>
+                        </tr> 
+                        <tr>
+                            <td>Gold Aug 05</td>
+                            <td>46,800.00</td>
+                            <td>-158.00</td>
+                            <td>-0.34</td>
+                        </tr> 
+                        <tr>
+                            <td>Gold Aug 05</td>
+                            <td>46,800.00</td>
+                            <td>-158.00</td>
+                            <td>-0.34</td>
+                        </tr> 
+                        <tr>
+                            <td>Gold Aug 05</td>
+                            <td>46,800.00</td>
+                            <td>-158.00</td>
+                            <td>-0.34</td>
+                        </tr> 
+                    </table>
+                </div> -->
+            </main>
+        </div>
+      </div>
+  </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

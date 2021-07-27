@@ -1,0 +1,19 @@
+.grid-layout {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 0;
+  }
+
+@media only screen and (min-width: 980px){
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 1fr minmax(20px, auto) 1fr;
+        grid-gap: 60px;
+      }
+      
+      .item2 {
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+      }
+    
+}
